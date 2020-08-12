@@ -1,4 +1,4 @@
-package com.waylau.spring.boot.hello.domain;
+package com.vvblog.blog.domain;
 
 import lombok.*;
 

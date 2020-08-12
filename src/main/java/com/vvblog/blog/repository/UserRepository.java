@@ -1,11 +1,9 @@
-package com.waylau.spring.boot.hello.repository;
+package com.vvblog.blog.repository;
 
-import com.waylau.spring.boot.hello.domain.User;
+import com.vvblog.blog.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 /**
  * User Repository 接口

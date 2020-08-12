@@ -1,7 +1,7 @@
-package com.waylau.spring.boot.hello.service;
+package com.vvblog.blog.service;
 
-import com.waylau.spring.boot.hello.domain.User;
-import com.waylau.spring.boot.hello.repository.UserRepository;
+import com.vvblog.blog.domain.User;
+import com.vvblog.blog.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

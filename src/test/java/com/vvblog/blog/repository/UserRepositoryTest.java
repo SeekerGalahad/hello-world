@@ -1,6 +1,6 @@
-package com.waylau.spring.boot.hello.repository;
+package com.vvblog.blog.repository;
 
-import com.waylau.spring.boot.hello.domain.User;
+import com.vvblog.blog.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

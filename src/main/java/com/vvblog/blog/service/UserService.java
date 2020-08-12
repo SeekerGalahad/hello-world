@@ -1,6 +1,6 @@
-package com.waylau.spring.boot.hello.service;
+package com.vvblog.blog.service;
 
-import com.waylau.spring.boot.hello.domain.User;
+import com.vvblog.blog.domain.User;
 
 import java.util.List;
 

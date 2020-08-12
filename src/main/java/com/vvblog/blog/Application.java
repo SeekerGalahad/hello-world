@@ -1,4 +1,4 @@
-package com.waylau.spring.boot.hello;
+package com.vvblog.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

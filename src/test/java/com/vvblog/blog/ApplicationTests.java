@@ -1,4 +1,4 @@
-package com.waylau.spring.boot.hello;
+package com.vvblog.blog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
