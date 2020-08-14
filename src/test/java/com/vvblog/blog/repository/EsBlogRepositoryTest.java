@@ -11,7 +11,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -44,10 +43,10 @@ public class EsBlogRepositoryTest {
                 .content("GFM 是 GitHub Flavored Markdown Viewer 的简称，是一款对 GitHub 友好的 Markdown 编辑器 。").build());
 
         Pageable pageable = new PageRequest(0, 20);
-        String title = "";
-        String summary = "";
+        String title = null;
+        String summary = null;
         String content = "Elasticsearch";
         Page<EsBlog> page = blogRepository.findDistinctEsBlogByTitleContainingOrSummaryContainingOrContentContaining(title, summary, content, pageable);
-        assertThat(page.getTotalElements()).isEqualTo(1);
+        assertThat(page.getTotalElements()).isEqualTo(2);
     }
 }
