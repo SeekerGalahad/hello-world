@@ -39,6 +39,10 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile("org.projectlombok:lombok:1.18.2")
 	runtime('com.h2database:h2:1.4.193')
+	// 添加   Thymeleaf Spring Security 依赖，与 Thymeleaf 版本一致都是 3.x
+	compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity4:3.0.2.RELEASE')
+	// 添加  Spring Security 依赖
+	compile('org.springframework.boot:spring-boot-starter-security')
 // 加载外部jar
 // compile files('lib/ojdbc6.jar')
 }
