@@ -5,16 +5,29 @@
 </head>
 <body>
 <div class="container blog-content-container">
-    <h3 th:text="${userModel.title}">用户详情</h3>
-    <div>
-        <p><strong>ID:</strong><span th:text="${userModel.user.id}"></span></p>
-        <p><strong>Name:</strong><span th:text="${userModel.user.name}"></span></p>
-        <p><strong>Email:</strong><span th:text="${userModel.user.email}"></span></p>
+    <div class="row">
+        <h2 th:text="${userModel.title}">用户详情</h2>
     </div>
-    <di>
-        <a th:href="@{'/users/delete/' + ${userModel.user.id}}">删除 </a>
-        | <a th:href="@{'/users/modify/' + ${userModel.user.id}}">修改</a>
-    </di>
+    <div class="input-group">
+        <a class="btn btn-primary" href="/users" th:href="@{/users}" role="button">返回</a>
+    </div>
+    <div class="row">
+        <p class="text-left"><strong>ID:</strong><span th:text="${userModel.user.id}"></span></p>
+    </div>
+    <div class="row">
+        <p class="text-left"><strong>Name:</strong><span th:text="${userModel.user.name}"></span></p>
+    </div>
+    <div class="row">
+        <p class="text-left"><strong>Email:</strong><span th:text="${userModel.user.email}"></span></p>
+    </div>
+    <div class="row">
+        <div class="input-group">
+            <a class="btn btn-primary" th:href="@{'/users/delete/' + ${userModel.user.id}}">
+                删除</a>
+            <a class="btn btn-primary" th:href="@{'/users/modify/' + ${userModel.user.id}}">
+                修改</a>
+        </div>
+    </div>
 </div>
 <div th:replace="~{fragments/footer :: footer}">...</div>
 </body>
